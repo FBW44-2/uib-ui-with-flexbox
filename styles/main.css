@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+}
+
+.card {
+    background-color: mistyrose;
+}
+
+.card:nth-child(1) {
+    /* flex-grow: 1; */
+}

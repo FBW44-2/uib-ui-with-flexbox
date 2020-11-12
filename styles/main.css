@@ -49,7 +49,10 @@
 
 /* Call to action button */
 .card-content-cta {
+    /* You can use align self to position the button all the way to the right */
     align-self: end;
+    /* You can also use margins to push the item left, right or to center it */
+    /* margin-left: auto; */
     background-color: rebeccapurple;
     color: white;
     border: none;

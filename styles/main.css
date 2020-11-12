@@ -9,9 +9,15 @@
 }
 
 .card {
-    background-color: mistyrose;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
 }
 
 .card:nth-child(1) {
     /* flex-grow: 1; */
+}
+
+.card-content {
+    flex-grow: 1;
 }

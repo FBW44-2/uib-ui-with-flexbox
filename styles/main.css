@@ -1,8 +1,5 @@
 .page {
-    display: flex;
     min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .center-content {
@@ -11,8 +8,22 @@
     align-items: center;
 }
 
+/* Cards list */
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    flex-basis: 100%;
+    padding: 16px;
+}
+
 .card {
     display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -49,9 +60,9 @@
 /* Call to action button */
 .card-content-cta {
     /* You can use align self to position the button all the way to the right */
-    align-self: end;
+    /* align-self: end; */
     /* You can also use margins to push the item left, right or to center it */
-    /* margin-left: auto; */
+    margin-left: auto;
     background-color: rebeccapurple;
     color: white;
     border: none;
@@ -61,4 +72,23 @@
 
 .card-content-cta:hover {
     cursor: pointer;
+}
+
+/* Media queries */
+@media (min-width: 400px) {
+    .card-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) {
+    .card-item {
+        flex-basis: 33.33%;
+    }
 }
